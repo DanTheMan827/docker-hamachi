@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.11
+FROM phusion/baseimage:latest
 MAINTAINER gfjardim <gfjardim@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ADD sources.list /etc/apt/sources.list
