@@ -15,6 +15,9 @@ RUN usermod -u 99 nobody && \
 
 RUN apt-get update -q
 
+# Disable SSH
+RUN rm -r /etc/service/sshd/
+
 # Install Hamachi
 ADD https://www.vpn.net/installers/logmein-hamachi-2.1.0.203-x64.tgz /tmp/hamachi.tgz
 RUN mkdir -p /opt/logmein-hamachi
